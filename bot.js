@@ -87,6 +87,8 @@ bot.hears('/bot', async (ctx) => {
 
 
 
+       
+
 good()}
 )
 bot.hears('/end', async (ctx) => {
