@@ -13,7 +13,7 @@ bot.hears('/bot', async (ctx) => {
       for (let i = 0; i < 3; i++) {
         score_dealer = data.items.results[i].results.score_dealer
       score_player = data.items.results[i].results.score_player
-       console.log(score_dealer);
+      // console.log(score_dealer);
     }
     if ((data.items.results[0].results.score_dealer == 10 && data.items.results[1].results.score_dealer == 6 && 
       data.items.results[2].results.score_dealer == 4) ) {
