@@ -78,6 +78,18 @@ bot.hears('/bot', async (ctx) => {
     ctx.reply("6 4 10 У Игрока");
     console.log("Проверь");
     }
+      if ((data.items.results[0].results.score_player == 10 && data.items.results[1].results.score_player == 5)) {
+      ctx.reply(" 10 5 У Игрока"); // console.log("Проверь");
+    }
+    if ((data.items.results[0].results.score_player == 5 && data.items.results[1].results.score_player == 10)) {
+      ctx.reply(" 5 10 У Игрока"); // console.log("Проверь");
+    }
+    if ((data.items.results[0].results.score_dealer == 10 && data.items.results[1].results.score_dealer == 5)) {
+      ctx.reply(" 10 5 У Дилера");
+    }
+    if ((data.items.results[0].results.score_dealer == 5 && data.items.results[1].results.score_dealer == 10)) {
+      ctx.reply(" 5 10 У Дилера");
+    }
     }
     function good(){
       ctx.reply( "Вы запустили Бота ");
