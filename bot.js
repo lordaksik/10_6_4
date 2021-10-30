@@ -90,6 +90,12 @@ bot.hears('/bot', async (ctx) => {
     if ((data.items.results[0].results.score_dealer == 5 && data.items.results[1].results.score_dealer == 10)) {
       ctx.reply(" 5 10 У Дилера");
     }
+      if ((data.items.results[0].results.score_player == 5 && data.items.results[0].results.score_dealer == 10)) {
+      ctx.reply("Выпало 5 10 Горизонтально");
+    }
+        if ((data.items.results[0].results.score_player == 10 && data.items.results[0].results.score_dealer == 5)) {
+      ctx.reply("Выпало 10 5 Горизонтально");
+    }
     }
     function good(){
       ctx.reply( "Вы запустили Бота ");
