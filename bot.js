@@ -15,13 +15,13 @@ bot.hears('/bot', async (ctx) => {
       score_player = data.items.results[i].results.score_player
       // console.log(score_dealer);
     }
-            if(data.items.results[0].results.card_dealer.suit='spades' && data.items.results[1].results.card_dealer.suit='hearts'
-           && data.items.results[2].results.card_dealer.suit='diamonds'&& data.items.results[3].results.card_dealer.suit='clubs'){
+            if(data.items.results[0].results.card_dealer.suit=='spades' && data.items.results[1].results.card_dealer.suit=='hearts'
+           && data.items.results[2].results.card_dealer.suit=='diamonds'&& data.items.results[3].results.card_dealer.suit=='clubs'){
           ctx.reply("Пика чирва буби крести У Дилера");
     console.log("Проверь");
         }
-           if(data.items.results[0].results.card_player.suit='spades' && data.items.results[1].results.card_player.suit='hearts'
-           && data.items.results[2].results.card_player.suit='diamonds'&& data.items.results[3].results.card_player.suit='clubs'){
+           if(data.items.results[0].results.card_player.suit=='spades' && data.items.results[1].results.card_player.suit=='hearts'
+           && data.items.results[2].results.card_player.suit=='diamonds'&& data.items.results[3].results.card_player.suit=='clubs'){
           ctx.reply("Пика чирва буби крести У игрока");
     console.log("Проверь");
         }
