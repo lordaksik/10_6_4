@@ -116,12 +116,19 @@ bot.hears('/bot', async (ctx) => {
 
 
        
+  try {
+  good()
+} catch (err) {
+  ctx.reply("Если вы видите это сообщение, сообщите администратору и скиньте скриншот сообщения");
+  clearInterval(global.time);
+  good()
+}
 
-good()}
+}
 )
 bot.hears('/end', async (ctx) => {
    try {
-      clearInterval(time);
+      clearInterval(global.time);
   
       ctx.reply("Пока");  
     } catch(err) {
