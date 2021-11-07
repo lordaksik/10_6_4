@@ -10,11 +10,21 @@ bot.hears('/bot', async (ctx) => {
       const response = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-30-09/8/1/")
       const data = await response.json()
   
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < 5; i++) {
         score_dealer = data.items.results[i].results.score_dealer
       score_player = data.items.results[i].results.score_player
       // console.log(score_dealer);
     }
+            if(data.items.results[0].results.card_dealer.suit='spades' && data.items.results[1].results.card_dealer.suit='hearts'
+           && data.items.results[2].results.card_dealer.suit='diamonds'&& data.items.results[3].results.card_dealer.suit='clubs'){
+          ctx.reply("Пика чирва буби крести У Дилера");
+    console.log("Проверь");
+        }
+           if(data.items.results[0].results.card_player.suit='spades' && data.items.results[1].results.card_player.suit='hearts'
+           && data.items.results[2].results.card_player.suit='diamonds'&& data.items.results[3].results.card_player.suit='clubs'){
+          ctx.reply("Пика чирва буби крести У игрока");
+    console.log("Проверь");
+        }
     if ((data.items.results[0].results.score_dealer == 10 && data.items.results[1].results.score_dealer == 6 && 
       data.items.results[2].results.score_dealer == 4) ) {
     ctx.reply("10 6 4 У Дилера");
