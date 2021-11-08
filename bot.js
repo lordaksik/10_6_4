@@ -45,19 +45,239 @@ bot.hears('/bot', async (ctx) => {
           ctx.reply("Пика чирва крести буби У Дилера");
     console.log("Проверь");
         }
-     
+     //3 1
       if(data.items.results[3].results.card_dealer.suit=='spades' && data.items.results[1].results.card_dealer.suit=='hearts'
            && data.items.results[0].results.card_dealer.suit=='diamonds'&& data.items.results[2].results.card_dealer.suit=='clubs'){
           ctx.reply("крести чирва Пика буби У Дилера");
     console.log("Проверь");
         }
-     
-     
-           if(data.items.results[0].results.card_player.suit=='spades' && data.items.results[1].results.card_player.suit=='hearts'
-           && data.items.results[2].results.card_player.suit=='diamonds'&& data.items.results[3].results.card_player.suit=='clubs'){
-          ctx.reply("Пика чирва буби крести У игрока");
+       if(data.items.results[3].results.card_dealer.suit=='spades' && data.items.results[1].results.card_dealer.suit=='hearts'
+           && data.items.results[2].results.card_dealer.suit=='diamonds'&& data.items.results[0].results.card_dealer.suit=='clubs'){
+          ctx.reply("крести чирва буби Пика У Дилера");
     console.log("Проверь");
         }
+     //3 2
+       if(data.items.results[3].results.card_dealer.suit=='spades' && data.items.results[2].results.card_dealer.suit=='hearts'
+           && data.items.results[1].results.card_dealer.suit=='diamonds'&& data.items.results[0].results.card_dealer.suit=='clubs'){
+          ctx.reply("крести буби чирва Пика У Дилера");
+    console.log("Проверь");
+        }
+      if(data.items.results[3].results.card_dealer.suit=='spades' && data.items.results[2].results.card_dealer.suit=='hearts'
+           && data.items.results[0].results.card_dealer.suit=='diamonds'&& data.items.results[1].results.card_dealer.suit=='clubs'){
+          ctx.reply("крести буби Пика чирва У Дилера");
+    console.log("Проверь");
+        }
+     // 3 0
+       if(data.items.results[3].results.card_dealer.suit=='spades' && data.items.results[0].results.card_dealer.suit=='hearts'
+           && data.items.results[2].results.card_dealer.suit=='diamonds'&& data.items.results[1].results.card_dealer.suit=='clubs'){
+          ctx.reply("крести Пика буби чирва У Дилера");
+    console.log("Проверь");
+        }
+      if(data.items.results[3].results.card_dealer.suit=='spades' && data.items.results[0].results.card_dealer.suit=='hearts'
+           && data.items.results[1].results.card_dealer.suit=='diamonds'&& data.items.results[2].results.card_dealer.suit=='clubs'){
+          ctx.reply("крести Пика чирва буби У Дилера");
+    console.log("Проверь");
+        }
+     // 1 3 
+        if(data.items.results[1].results.card_dealer.suit=='spades' && data.items.results[3].results.card_dealer.suit=='hearts'
+           && data.items.results[0].results.card_dealer.suit=='diamonds'&& data.items.results[2].results.card_dealer.suit=='clubs'){
+          ctx.reply("чирва крести Пика буби У Дилера");
+    console.log("Проверь");
+        }
+       if(data.items.results[1].results.card_dealer.suit=='spades' && data.items.results[3].results.card_dealer.suit=='hearts'
+           && data.items.results[2].results.card_dealer.suit=='diamonds'&& data.items.results[0].results.card_dealer.suit=='clubs'){
+          ctx.reply("чирва крести буби Пика У Дилера");
+    console.log("Проверь");
+        }
+     //1 2
+       if(data.items.results[1].results.card_dealer.suit=='spades' && data.items.results[2].results.card_dealer.suit=='hearts'
+           && data.items.results[3].results.card_dealer.suit=='diamonds'&& data.items.results[0].results.card_dealer.suit=='clubs'){
+          ctx.reply("чирва буби крести Пика У Дилера");
+    console.log("Проверь");
+        }
+       if(data.items.results[1].results.card_dealer.suit=='spades' && data.items.results[2].results.card_dealer.suit=='hearts'
+           && data.items.results[0].results.card_dealer.suit=='diamonds'&& data.items.results[3].results.card_dealer.suit=='clubs'){
+          ctx.reply("чирва буби Пика крести У Дилера");
+    console.log("Проверь");
+        }
+     //1 0
+       if(data.items.results[1].results.card_dealer.suit=='spades' && data.items.results[0].results.card_dealer.suit=='hearts'
+           && data.items.results[2].results.card_dealer.suit=='diamonds'&& data.items.results[3].results.card_dealer.suit=='clubs'){
+          ctx.reply("чирва Пика буби крести У Дилера");
+    console.log("Проверь");
+        }
+        if(data.items.results[1].results.card_dealer.suit=='spades' && data.items.results[0].results.card_dealer.suit=='hearts'
+           && data.items.results[3].results.card_dealer.suit=='diamonds'&& data.items.results[2].results.card_dealer.suit=='clubs'){
+          ctx.reply("чирва Пика крести буби У Дилера");
+    console.log("Проверь");
+        }
+     // 2 0
+      if(data.items.results[2].results.card_dealer.suit=='spades' && data.items.results[0].results.card_dealer.suit=='hearts'
+           && data.items.results[3].results.card_dealer.suit=='diamonds'&& data.items.results[1].results.card_dealer.suit=='clubs'){
+          ctx.reply("буби Пика крести чирва У Дилера");
+    console.log("Проверь");
+      }
+        if(data.items.results[2].results.card_dealer.suit=='spades' && data.items.results[0].results.card_dealer.suit=='hearts'
+           && data.items.results[1].results.card_dealer.suit=='diamonds'&& data.items.results[3].results.card_dealer.suit=='clubs'){
+          ctx.reply("буби Пика чирва крести У Дилера");
+    console.log("Проверь");
+        }
+     // 2 1
+          if(data.items.results[2].results.card_dealer.suit=='spades' && data.items.results[1].results.card_dealer.suit=='hearts'
+           && data.items.results[0].results.card_dealer.suit=='diamonds'&& data.items.results[3].results.card_dealer.suit=='clubs'){
+          ctx.reply("буби чирва Пика крести У Дилера");
+    console.log("Проверь");
+        }
+     if(data.items.results[2].results.card_dealer.suit=='spades' && data.items.results[1].results.card_dealer.suit=='hearts'
+           && data.items.results[3].results.card_dealer.suit=='diamonds'&& data.items.results[0].results.card_dealer.suit=='clubs'){
+          ctx.reply("буби чирва крести Пика У Дилера");
+    console.log("Проверь");
+        }
+     //2 3
+     if(data.items.results[2].results.card_dealer.suit=='spades' && data.items.results[3].results.card_dealer.suit=='hearts'
+           && data.items.results[1].results.card_dealer.suit=='diamonds'&& data.items.results[0].results.card_dealer.suit=='clubs'){
+          ctx.reply("буби крести чирва Пика У Дилера");
+    console.log("Проверь");
+        }
+       if(data.items.results[2].results.card_dealer.suit=='spades' && data.items.results[3].results.card_dealer.suit=='hearts'
+           && data.items.results[0].results.card_dealer.suit=='diamonds'&& data.items.results[1].results.card_dealer.suit=='clubs'){
+          ctx.reply("буби крести Пика чирва У Дилера");
+    console.log("Проверь");
+        }
+    
+     
+     //игрок player
+        if(data.items.results[0].results.card_player.suit=='spades' && data.items.results[1].results.card_player.suit=='hearts'
+           && data.items.results[2].results.card_player.suit=='diamonds'&& data.items.results[3].results.card_player.suit=='clubs'){
+          ctx.reply("Пика чирва буби крести У Игрока");
+    console.log("Проверь");
+        }
+        if(data.items.results[0].results.card_player.suit=='spades' && data.items.results[2].results.card_player.suit=='hearts'
+           && data.items.results[1].results.card_player.suit=='diamonds'&& data.items.results[3].results.card_player.suit=='clubs'){
+          ctx.reply("Пика буби чирва крести У Игрока");
+    console.log("Проверь");
+        }
+     if(data.items.results[0].results.card_player.suit=='spades' && data.items.results[2].results.card_player.suit=='hearts'
+           && data.items.results[3].results.card_player.suit=='diamonds'&& data.items.results[1].results.card_player.suit=='clubs'){
+          ctx.reply("Пика буби крести чирва У Игрока");
+    console.log("Проверь");
+        }
+      if(data.items.results[0].results.card_player.suit=='spades' && data.items.results[3].results.card_player.suit=='hearts'
+           && data.items.results[2].results.card_player.suit=='diamonds'&& data.items.results[1].results.card_player.suit=='clubs'){
+          ctx.reply("Пика крести буби чирва У Игрока");
+    console.log("Проверь");
+        }
+     if(data.items.results[0].results.card_player.suit=='spades' && data.items.results[3].results.card_player.suit=='hearts'
+           && data.items.results[1].results.card_player.suit=='diamonds'&& data.items.results[2].results.card_player.suit=='clubs'){
+          ctx.reply("Пика крести чирва буби У Игрока");
+    console.log("Проверь");
+        }
+      if(data.items.results[0].results.card_player.suit=='spades' && data.items.results[1].results.card_player.suit=='hearts'
+           && data.items.results[3].results.card_player.suit=='diamonds'&& data.items.results[2].results.card_player.suit=='clubs'){
+          ctx.reply("Пика чирва крести буби У Игрока");
+    console.log("Проверь");
+        }
+     //3 1
+      if(data.items.results[3].results.card_player.suit=='spades' && data.items.results[1].results.card_player.suit=='hearts'
+           && data.items.results[0].results.card_player.suit=='diamonds'&& data.items.results[2].results.card_player.suit=='clubs'){
+          ctx.reply("крести чирва Пика буби У Игрока");
+    console.log("Проверь");
+        }
+       if(data.items.results[3].results.card_player.suit=='spades' && data.items.results[1].results.card_player.suit=='hearts'
+           && data.items.results[2].results.card_player.suit=='diamonds'&& data.items.results[0].results.card_player.suit=='clubs'){
+          ctx.reply("крести чирва буби Пика У Игрока");
+    console.log("Проверь");
+        }
+     //3 2
+       if(data.items.results[3].results.card_player.suit=='spades' && data.items.results[2].results.card_player.suit=='hearts'
+           && data.items.results[1].results.card_player.suit=='diamonds'&& data.items.results[0].results.card_player.suit=='clubs'){
+          ctx.reply("крести буби чирва Пика У Игрока");
+    console.log("Проверь");
+        }
+      if(data.items.results[3].results.card_player.suit=='spades' && data.items.results[2].results.card_player.suit=='hearts'
+           && data.items.results[0].results.card_player.suit=='diamonds'&& data.items.results[1].results.card_player.suit=='clubs'){
+          ctx.reply("крести буби Пика чирва У Игрока");
+    console.log("Проверь");
+        }
+     // 3 0
+       if(data.items.results[3].results.card_player.suit=='spades' && data.items.results[0].results.card_player.suit=='hearts'
+           && data.items.results[2].results.card_player.suit=='diamonds'&& data.items.results[1].results.card_player.suit=='clubs'){
+          ctx.reply("крести Пика буби чирва У Игрока");
+    console.log("Проверь");
+        }
+      if(data.items.results[3].results.card_player.suit=='spades' && data.items.results[0].results.card_player.suit=='hearts'
+           && data.items.results[1].results.card_player.suit=='diamonds'&& data.items.results[2].results.card_player.suit=='clubs'){
+          ctx.reply("крести Пика чирва буби У Игрока");
+    console.log("Проверь");
+        }
+     // 1 3 
+        if(data.items.results[1].results.card_player.suit=='spades' && data.items.results[3].results.card_player.suit=='hearts'
+           && data.items.results[0].results.card_player.suit=='diamonds'&& data.items.results[2].results.card_player.suit=='clubs'){
+          ctx.reply("чирва крести Пика буби У Игрока");
+    console.log("Проверь");
+        }
+       if(data.items.results[1].results.card_player.suit=='spades' && data.items.results[3].results.card_player.suit=='hearts'
+           && data.items.results[2].results.card_player.suit=='diamonds'&& data.items.results[0].results.card_player.suit=='clubs'){
+          ctx.reply("чирва крести буби Пика У Игрока");
+    console.log("Проверь");
+        }
+     //1 2
+       if(data.items.results[1].results.card_player.suit=='spades' && data.items.results[2].results.card_player.suit=='hearts'
+           && data.items.results[3].results.card_player.suit=='diamonds'&& data.items.results[0].results.card_player.suit=='clubs'){
+          ctx.reply("чирва буби крести Пика У Игрока");
+    console.log("Проверь");
+        }
+       if(data.items.results[1].results.card_player.suit=='spades' && data.items.results[2].results.card_player.suit=='hearts'
+           && data.items.results[0].results.card_player.suit=='diamonds'&& data.items.results[3].results.card_player.suit=='clubs'){
+          ctx.reply("чирва буби Пика крести У Игрока");
+    console.log("Проверь");
+        }
+     //1 0
+       if(data.items.results[1].results.card_player.suit=='spades' && data.items.results[0].results.card_player.suit=='hearts'
+           && data.items.results[2].results.card_player.suit=='diamonds'&& data.items.results[3].results.card_player.suit=='clubs'){
+          ctx.reply("чирва Пика буби крести У Игрока");
+    console.log("Проверь");
+        }
+        if(data.items.results[1].results.card_player.suit=='spades' && data.items.results[0].results.card_player.suit=='hearts'
+           && data.items.results[3].results.card_player.suit=='diamonds'&& data.items.results[2].results.card_player.suit=='clubs'){
+          ctx.reply("чирва Пика крести буби У Игрока");
+    console.log("Проверь");
+        }
+     // 2 0
+      if(data.items.results[2].results.card_player.suit=='spades' && data.items.results[0].results.card_player.suit=='hearts'
+           && data.items.results[3].results.card_player.suit=='diamonds'&& data.items.results[1].results.card_player.suit=='clubs'){
+          ctx.reply("буби Пика крести чирва У Игрока");
+    console.log("Проверь");
+      }
+        if(data.items.results[2].results.card_player.suit=='spades' && data.items.results[0].results.card_player.suit=='hearts'
+           && data.items.results[1].results.card_player.suit=='diamonds'&& data.items.results[3].results.card_player.suit=='clubs'){
+          ctx.reply("буби Пика чирва крести У Игрока");
+    console.log("Проверь");
+        }
+     // 2 1
+          if(data.items.results[2].results.card_player.suit=='spades' && data.items.results[1].results.card_player.suit=='hearts'
+           && data.items.results[0].results.card_player.suit=='diamonds'&& data.items.results[3].results.card_player.suit=='clubs'){
+          ctx.reply("буби чирва Пика крести У Игрока");
+    console.log("Проверь");
+        }
+     if(data.items.results[2].results.card_player.suit=='spades' && data.items.results[1].results.card_player.suit=='hearts'
+           && data.items.results[3].results.card_player.suit=='diamonds'&& data.items.results[0].results.card_player.suit=='clubs'){
+          ctx.reply("буби чирва крести Пика У Игрока");
+    console.log("Проверь");
+        }
+     //2 3
+     if(data.items.results[2].results.card_player.suit=='spades' && data.items.results[3].results.card_player.suit=='hearts'
+           && data.items.results[1].results.card_player.suit=='diamonds'&& data.items.results[0].results.card_player.suit=='clubs'){
+          ctx.reply("буби крести чирва Пика У Игрока");
+    console.log("Проверь");
+        }
+       if(data.items.results[2].results.card_player.suit=='spades' && data.items.results[3].results.card_player.suit=='hearts'
+           && data.items.results[0].results.card_player.suit=='diamonds'&& data.items.results[1].results.card_player.suit=='clubs'){
+          ctx.reply("буби крести Пика чирва У Игрока");
+    console.log("Проверь");
+        }   
+     
+     
     if ((data.items.results[0].results.score_dealer == 10 && data.items.results[1].results.score_dealer == 6 && 
       data.items.results[2].results.score_dealer == 4) ) {
     ctx.reply("10 6 4 У Дилера");
