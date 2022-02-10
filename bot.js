@@ -46,8 +46,8 @@ bot.hears('/bot', async (ctx) => {
 
         }
      //3 1
-      if(data.items.results[3].results.card_dealer.suit=='spades' && data.items.results[1].results.card_dealer.suit=='hearts'
-           && data.items.results[0].results.card_dealer.suit=='diamonds'&& data.items.results[2].results.card_dealer.suit=='clubs'){
+      if(data.items.results[2].results.card_dealer.suit=='spades' && data.items.results[1].results.card_dealer.suit=='hearts'
+           && data.items.results[3].results.card_dealer.suit=='diamonds'&& data.items.results[0].results.card_dealer.suit=='clubs'){
           ctx.reply("крести чирва Пика буби У Дилера");
 
         }
