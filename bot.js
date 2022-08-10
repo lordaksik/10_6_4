@@ -342,13 +342,20 @@ bot.hears('/bot', async (ctx) => {
       ctx.reply("Выпало 10 5 Горизонтально");
     }
 
-    if((data.items.results[0].results.score_player === data.items.results[1].results.score_player)||
-    data.items.results[0].results.score_player === data.items.results[1].results.score_dealer||
-    (data.items.results[0].results.score_dealer === data.items.results[1].results.score_player)||
-    data.items.results[0].results.score_dealer === data.items.results[1].results.score_dealer)
-{
-  ctx.reply("была ничья и +1");
-}
+    let player0=parseInt(data.items.results[0].results.score_player,10)
+    let player1=parseInt(data.items.results[1].results.score_player,10)
+    let dealer0=parseInt(data.items.results[0].results.score_dealer,10)
+    let dealer1=parseInt(data.items.results[1].results.score_dealer,10)
+    console.log( typeof player0)
+    console.log(dealer1 - 1)
+    console.log(player1 + ' ' + dealer1)
+    if ((player0 === player1) && ((dealer0 === (dealer1 + 1) || (dealer0 === (dealer1 - 1)))) ||
+        (player0 === dealer1) && ((dealer0 === (player1 + 1) || (dealer0 === (player1 - 1))))||
+        (dealer0 === player1) && ((player0 === (dealer1 + 1) || (player0 === (dealer1 - 1))))||
+        (dealer0 === dealer1) && ((player0 === (player1 + 1) || (player0 === (player1 - 1)))))
+    {
+         ctx.reply("была ничья и вторая пара +1 или -1");
+    }
     }
     function good(){
       ctx.reply( "Вы запустили Бота ");
