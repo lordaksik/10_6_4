@@ -9,7 +9,7 @@ bot.hears('/bot', async (ctx) => {
     async function request2(){
       const response = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-30-09/8/1/")
       const data = await response.json()
-  
+ 
       for (let i = 0; i < 5; i++) {
         score_dealer = data.items.results[i].results.score_dealer
       score_player = data.items.results[i].results.score_player
@@ -341,6 +341,14 @@ bot.hears('/bot', async (ctx) => {
         if ((data.items.results[0].results.score_player == 10 && data.items.results[0].results.score_dealer == 5)) {
       ctx.reply("Выпало 10 5 Горизонтально");
     }
+
+    if((data.items.results[0].results.score_player === data.items.results[1].results.score_player)||
+    data.items.results[0].results.score_player === data.items.results[1].results.score_dealer||
+    (data.items.results[0].results.score_dealer === data.items.results[1].results.score_player)||
+    data.items.results[0].results.score_dealer === data.items.results[1].results.score_dealer)
+{
+  ctx.reply("была ничья и +1");
+}
     }
     function good(){
       ctx.reply( "Вы запустили Бота ");
