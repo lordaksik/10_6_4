@@ -7,6 +7,7 @@ console.log(ctx.message)})
 bot.help((ctx) => ctx.reply('Напиши /bot'))
 bot.hears('/bot', async (ctx) => {
     async function request2(){
+     try{
       const response = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-30-09/8/1/")
       const data = await response.json()
  
@@ -355,6 +356,10 @@ bot.hears('/bot', async (ctx) => {
         (dealer0 === dealer1) && ((player0 === (player1 + 1) || (player0 === (player1 - 1)))))
     {
          ctx.reply("была ничья и вторая пара +1 или -1");
+    }
+      }
+    catch (err) {
+       console.log(err)
     }
     }
     function good(){
