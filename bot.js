@@ -10,7 +10,19 @@ bot.hears('/bot', async (ctx) => {
      try{
       const response = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-30-09/8/1/")
       const data = await response.json()
- 
+      var result2222=0;
+       for (let i = 0; i <= 14; i++) {
+            score_dealer = data.items.results[i].results.score_dealer
+            score_player = data.items.results[i].results.score_player
+            if ((score_player === "8") || (score_dealer === "8")) {
+                result2222 = result2222 + 1;
+            }
+
+        }
+
+        if (result2222 === 0) {
+             ctx.reply(' Не было 8 уже 15 раздач');
+        }
       for (let i = 0; i < 5; i++) {
         score_dealer = data.items.results[i].results.score_dealer
       score_player = data.items.results[i].results.score_player
